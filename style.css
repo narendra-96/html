@@ -1,0 +1,33 @@
+/* General layout tweaks */
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header image container */
+.header-section img {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+}
+
+/* Main content width */
+.main-content {
+  max-width: 1564px;
+}
+
+/* Project images */
+.w3-display-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer styling */
+footer a {
+  text-decoration: none;
+}
+
+/* Optional: Add hover effect for team buttons */
+.w3-button:hover {
+  background-color: #ccc !important;
+  color: black !important;
+}
