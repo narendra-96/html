@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV-BAR1</title>
+    <style>
+        .container {
+            color: white;
+            background-color: gray;
+            width: 98%;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .HOME,
+        .ABOUT,
+        .MENU,
+        .WHERE {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        .MORE {
+            background-color: black;
+        }
+
+        .MORE select {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        .harish {
+            margin-left: auto;
+        }
+
+        .harish input[type="text"] {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="HOME">HOME</button>
+        <button class="ABOUT">ABOUT</button>
+        <button class="MENU">MENU</button>
+        <button class="WHERE">WHERE</button>
+
+        <div class="MORE">
+            <select name="MORE" id="MORE">
+                <option value="name">MORE</option>
+                <option value="age">Age</option>
+                <option value="work">Work</option>
+                <option value="experience">Experience</option>
+            </select>
+        </div>
+
+        <div class="harish">
+            <input type="text" name="search" placeholder="Search">
+             <i class="fas fa-search"></i>
+        </div>
+    </div>
+</body>
+
+</html>
