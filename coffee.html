@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cafe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        .hero-section {
+            height: 500px;
+            background-image: url(https://github.com/ArifBillah1996/the-coffee-house/blob/main/img/1.jpg?raw=true);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-bottom: 2px solid white;
+        }
+
+        .button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        h1 {
+            font-size: 77px;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 8px black;
+            margin: 40px 0 10px;
+        }
+
+        .text,
+        .text1 {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            color: #d3cccc;
+            max-width: fit-content;
+        }
+
+        .text {
+            margin: 160px auto 10px 30px;
+        }
+
+        .text1 {
+            margin: -50px 30px 40px auto;
+        }
+
+        h3 {
+            background-color: rgba(18, 12, 12, 0.85);
+            width: fit-content;
+            border-radius: 10px;
+            font-size: 20px;
+            color: #d3cccc;
+            padding: 5px 15px;
+            margin: 40px auto 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-wrapper,
+        .content2 {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #000;
+            text-align: justify;
+        }
+        .quote-box {
+    background-color: #f7f7f7;
+    border-left: 6px solid #ccc;
+    margin: 40px auto;
+    padding: 20px 30px;
+    max-width: 800px;
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+}
+
+.quote-box footer {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+}
+
+        .image-center {
+            display: block;
+            margin: 30px auto;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+.menu-card {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Tab Buttons */
+.menu-toggle {
+    display: flex;
+    background-color: #eee;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-toggle .tab {
+    flex: 1;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hide all menus by default */
+.menu-content > div {
+    display: none;
+    padding: 20px 30px;
+}
+
+/* Show only the selected menu */
+#eat:checked ~ .menu-toggle + .menu-content .eat-menu {
+    display: block;
+}
+
+#drink:checked ~ .menu-toggle + .menu-content .drink-menu {
+    display: block;
+}
+
+/* Menu item layout */
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item p {
+    color: #555;
+    margin: 5px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Active tab highlighting */
+#eat:checked ~ .menu-toggle label[for="eat"],
+#drink:checked ~ .menu-toggle label[for="drink"] {
+    background-color: #444;
+    color: #fff;
+}
+
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: #444;
+        }
+
+        form input,
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background: black;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="container">
+            <button class="button">HOME</button>
+            <button class="button">ABOUT</button>
+            <button class="button">MENU</button>
+            <button class="button">WHERE</button>
+        </div>
+
+        <h1>the<br>cafe</h1>
+
+        <div class="text">Open from 6am to 5pm</div>
+        <div class="text1">15 Adr street, 5015</div>
+    </div>
+
+    <h3>ABOUT THE CAFE</h3>
+
+    <div class="content-wrapper">
+        The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+    </div>
+
+    <blockquote class="quote-box">
+    <p>
+        <em>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</em>
+    </p>
+    <footer><strong>Chef, Coffeeist and Owner:</strong> Liam Brown</footer>
+</blockquote>
+
+
+    <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" class="image-center" alt="Cafe Interior">
+
+    <h3>THE MENU</h3>
+
+<div class="menu-card">
+    <input type="radio" name="menu" id="eat" checked hidden>
+    <input type="radio" name="menu" id="drink" hidden>
+
+    <div class="menu-toggle">
+        <label for="eat" class="tab">Eat</label>
+        <label for="drink" class="tab">Drink</label>
+    </div>
+
+    <div class="menu-content">
+        <div class="eat-menu">
+            <div class="menu-item">
+                <strong>Bread Basket</strong>
+                <p>Assortment of fresh baked fruit breads and muffins <span class="price">₹50</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Granola with Fruits</strong>
+                <p>Natural cereal with toasted oats, raisins, almonds, dates <span class="price">₹75</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Belgian Waffle</strong>
+                <p>Vanilla flavored batter with malted flour <span class="price">₹60</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Scrambled Eggs</strong>
+                <p>Eggs with red pepper, garlic, green onions <span class="price">₹55</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Blueberry Pancakes</strong>
+                <p>With syrup, butter and lots of berries <span class="price">₹70</span></p>
+            </div>
+        </div>
+
+        <div class="drink-menu">
+            <div class="menu-item">
+                <strong>Espresso</strong>
+                <p>Strong and bold coffee shot <span class="price">₹25</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Cappuccino</strong>
+                <p>Espresso with steamed milk and foam <span class="price">₹35</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Latte</strong>
+                <p>Espresso with lots of steamed milk <span class="price">₹38</span></p>
+            </div>
+            <div class="menu-item">
+                <strong>Mocha</strong>
+                <p>Chocolate flavored coffee <span class="price">₹40</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" class="image-center" alt="Breakfast and Coffee">
+
+    <h3>WHERE TO FIND US</h3>
+
+    <div class="content-wrapper">
+        <img src="https://www.w3schools.com/w3images/map.jpg" class="image-center" alt="Map location">
+        <p><strong style="background:black; color:white; padding:2px 6px;">FYI!</strong> We offer full-service catering for any event, large or small. Contact us for more details.</p>
+        <p><strong>Reserve</strong> a table or just send us a message:</p>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="number" placeholder="How many people" required>
+            <input type="datetime-local" required>
+            <input type="text" placeholder="Message / Special Requirements">
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Crafted with ♥ by Narendra.</p>
+    </footer>
+</body>
+
+</html>
